@@ -21,8 +21,8 @@ zline = np.log(np.sqrt(X**2 + Y**2))
 # zline=np.append(zline,(-1)*zline,axis=0)
 # print(zline)
 fig = plt.figure()
-ax1=fig.add_subplot(1,2,1,projection='3d')
-ax2=fig.add_subplot(1,2,2,projection='3d')
+# ax1=fig.add_subplot(1,2,1,projection='3d')
+ax2=fig.add_subplot(1,1,1,projection='3d')
 # ax=plt.axes()
 Z=np.arcsin(Y/np.sqrt(X**2 + Y**2))
 
@@ -57,7 +57,7 @@ fcolors3 = m3.to_rgba(color_dimension3)
 
 
 
-surf1=ax1.plot_surface(NX,NY,np.log(np.sqrt(NX**2+NY**2)),facecolors=fcolors,linewidth=0)
+# surf1=ax1.plot_surface(NX,NY,np.log(np.sqrt(NX**2+NY**2)),facecolors=fcolors,linewidth=0)
 # surf2=ax1.plot_surface(X,Y,(-1)*zline,facecolors=fcolors1,linewidth=0)
 surf3=ax2.plot_surface(X,Y,Z,cmap='jet',linewidth=0)
 surf4=ax2.plot_surface(XNN,YNN,np.arcsin(YNN/np.sqrt(YNN**2 + XNN**2)),cmap='jet',linewidth=0)
