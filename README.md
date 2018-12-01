@@ -1,6 +1,6 @@
 # Plotting-Complex-functions
 ## Functions plotted
-    sqaure root of comlpex number ((x+iy)^0.5)
+    square root of complex number ((x+iy)^0.5)
     log of complex number (log(x+iy))
     exponent of a complex (e^(x+iy))
     cosine of complex number (cos(x+iy))
